@@ -2,9 +2,7 @@ const webApp = global.webApp;
 const ToolVideoController = require('../src/controllers/ToolVideoController');
 
 // ===========================================================
-webApp.get('/api/tool-video', async (req, res) => {
-  return res.json('API này có hoạt động')
-});
+
 
 webApp.post('/api/tool-video/crawl-download-youtube', async (req, res) => {
   const toolVideoController = new ToolVideoController();
