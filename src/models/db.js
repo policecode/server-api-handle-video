@@ -2,7 +2,7 @@ const Sequelize = require("sequelize");
 const sequelize = new Sequelize('database', 'user','password', {
   host: 'localhost',
   dialect: 'sqlite',
-  operatorsAliases: false,
+  operatorsAliases: 0,
 
   pool: {
     max: 5,
