@@ -93,25 +93,25 @@ class ToolVideoController extends Controller {
     const {linkyoutube} = req.body;
     try {
       const info = await ytdl.getBasicInfo(linkyoutube);
-      const video = await ytdl.getInfo(linkyoutube)
-      const listVideo = {};
-      const listAudio = {};
+      // const video = await ytdl.getInfo(linkyoutube )
+      // const listVideo = {};
+      // const listAudio = {};
 
-      video.formats.forEach((el, index) => {
-        if (el.container == 'mp4' && el.qualityLabel) {
-        // el.hasVideo && el.hasAudio && 
-          if (!listVideo[el.qualityLabel]) {
-            listVideo[el.qualityLabel] = el
-          } else if(el.hasVideo && el.hasAudio) {
-            if (!(listVideo[el.qualityLabel].hasVideo && listVideo[el.qualityLabel].hasAudio)) {
-              listVideo[el.qualityLabel] = el
-            }
-          }
-        }
-        if (!el.hasVideo) {
-          listAudio[el.quality] = el
-        }
-      });
+      // video.formats.forEach((el, index) => {
+      //   if (el.container == 'mp4' && el.qualityLabel) {
+      //   // el.hasVideo && el.hasAudio && 
+      //     if (!listVideo[el.qualityLabel]) {
+      //       listVideo[el.qualityLabel] = el
+      //     } else if(el.hasVideo && el.hasAudio) {
+      //       if (!(listVideo[el.qualityLabel].hasVideo && listVideo[el.qualityLabel].hasAudio)) {
+      //         listVideo[el.qualityLabel] = el
+      //       }
+      //     }
+      //   }
+      //   if (!el.hasVideo) {
+      //     listAudio[el.quality] = el
+      //   }
+      // });
 
       let information = {
         title: info.videoDetails.title,
@@ -132,8 +132,8 @@ class ToolVideoController extends Controller {
         result: 1,
         type: 'Success',
         information: information,
-        audio: listAudio,
-        video: listVideo
+        // audio: listAudio,
+        // video: listVideo
       });
     } catch (e) {
       return res.status(200).send({

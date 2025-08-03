@@ -105,9 +105,7 @@ webApp.use(fileUpload({
 webApp.get('/api', (req, res) => {
   return res.json('set up api pupperteer')
 });
-webApp.get('/api/tool-video', async (req, res) => {
-  return res.json('API này có hoạt động')
-});
+
 require('./routes/toolvideo.js');
 
 // require('./routes/crawl.js');
