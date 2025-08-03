@@ -92,7 +92,26 @@ class ToolVideoController extends Controller {
   async crawlYoutube(req, res) {
     const {linkyoutube} = req.body;
     try {
-      const info = await ytdl.getBasicInfo(linkyoutube);
+      const cookies = [
+        { name: "datr", value: "aYVEaOYGngCd8xFaUrXdPVMy" },
+        { name: "sb", value: "aYVEaGAbLuKlkO9Cz51e1FYC" },
+        { name: "c_user", value: "100093990249296" },
+        { name: "ps_l", value: "1" },
+        { name: "ps_n", value: "1" },
+        { name: "ar_debug", value: "1" },
+        { name: "wd", value: "1920x945" },
+        { name: "i_user", value: "61577351630995" },
+        { name: "fr", value: "1W84p5bwQt79Fd5PD.AWfB2BaFxlhsRsKpaiJnIW6WkJiv-fdoWsuOrGm4dnEfN7UF2fo.BojypI..AAA.0.0.BojypI.AWcr9I3uzEptdFSUoQJQHOENlfU" },
+        { name: "xs", value: "15%3AIgW3nEmjQ65AIw%3A2%3A1749321172%3A-1%3A-1%3A%3AAcVXzSwIJtu5ir0gI1jZ5MLGGMTZGOwYQ2ab5tNqUp_Y" },
+        { name: "presence", value: "C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1754212948115%2C%22v%22%3A1%7D" }
+      ];
+      const agentOptions = {
+        pipelining: 5,
+        maxRedirections: 0,
+        localAddress: "127.0.0.1",
+      };
+      const agent = ytdl.createAgent(cookies, agentOptions);
+      const info = await ytdl.getBasicInfo(linkyoutube, agent);
       // const video = await ytdl.getInfo(linkyoutube )
       // const listVideo = {};
       // const listAudio = {};
