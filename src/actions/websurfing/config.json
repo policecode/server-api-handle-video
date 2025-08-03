@@ -1,0 +1,78 @@
+{
+  "worker": {
+    "job": {
+      "keywords": "THẮNG x CINEBAR COCKTAIL & WINE",
+      "randomWords": "kenh14;bao 24h",
+      "id": "owLt9eJQnD4",
+      "uuid": "771b11e8-134d-434a-b0df-3036f474d82e",
+      "is_live": false,
+      "style": "direct",
+      "duration": 93,
+      "watchTime": 10,
+      "login": true,
+      "numRandomVideos": 2,
+      "account": {
+        "email": "houvklmn@gmail.com",
+        "password": "Test7ZmcFm6fJCFOG",
+        "cookies": "[ { \"domain\": \".google.com\", \"expirationDate\": 1714443906.221004, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"SAPISID\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"1IfOupl1cIZFTHFx/AkyaM5ocWO8omZ63a\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.221046, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"__Secure-3PAPISID\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"1IfOupl1cIZFTHFx/AkyaM5ocWO8omZ63a\" }, { \"domain\": \".google.com\", \"expirationDate\": 1694850082.660398, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"AEC\", \"path\": \"/\", \"sameSite\": \"lax\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"AUEFqZfdy2Rn--2-QRjFyeVNTsv5ZOC2uRje_exj3-0kkl4MKhFVpu2qVHU\" }, { \"domain\": \".google.com\", \"expirationDate\": 1695889104.450466, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"NID\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"511=KfWivHCoqoRN7mCQxoR4LKW2cA5yYIn8HW4mQNQPxnsL8DKUQFxBiFbXOmt53ryhOOCoaAhSmjke3zzoeR2tuFcIbHqEckW8hU_B9J_RC2IRM22EL94ZBVW9quJ89NekmMG8bE0zZyWHGXPZLsYvbxx_8AzZ0RZceY70bRWzGgWEU_ROGdTKHspLdr9eXFaY2zKLf2jjHpZp-C92V3slXRZ5SF5QUIYQhA3tIldvxZHm0e6rIw\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.22099, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"APISID\", \"path\": \"/\", \"sameSite\": null, \"secure\": false, \"session\": false, \"storeId\": null, \"value\": \"mFHS5VeZspfThKqi/A7rU43bTlcwDKT7R6\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.221033, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"__Secure-1PAPISID\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"1IfOupl1cIZFTHFx/AkyaM5ocWO8omZ63a\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.220885, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"__Secure-3PSID\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"Uwisa5GA6JaTg7FWi_3ojC3Oz1WWwMwCVurw5V1egQVwArhNvmz8CO9j4rN37gK9fNYaHQ.\" }, { \"domain\": \".google.com\", \"expirationDate\": 1682669904.826549, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"1P_JAR\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"2023-03-29-08\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.220865, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"__Secure-1PSID\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"Uwisa5GA6JaTg7FWi_3ojC3Oz1WWwMwCVurw5V1egQVwArhNIRh7u61aLVHtFYWvOT-lpQ.\" }, { \"domain\": \".google.com\", \"expirationDate\": 1711615240.47493, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"__Secure-1PSIDCC\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"AFvIBn_uJcEzRw45fjqw0-CxgYXSdN00HQsJTvH5o2vGxyMmSUZaEDIVShb-5DL2tMaSzQS3bg\" }, { \"domain\": \".google.com\", \"expirationDate\": 1711615240.47498, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"__Secure-3PSIDCC\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"AFvIBn8zVxQLPbIuNrBI0OPKYs3eL8hbD6dGbQDGmO1uERSsiRW_kL1h-zQ2cGoUn7Quh1g15JI\" }, { \"domain\": \"myaccount.google.com\", \"expirationDate\": 1714443906.536125, \"hostOnly\": true, \"httpOnly\": true, \"name\": \"__Secure-OSID\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"Uwisa3Bl2ljgieXaUDGAaJ3AYfcQhYEYpkcgMSFR_N7NJIzj8EEW-tViGdnNfiRpjS0Ewg.\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.220958, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"HSID\", \"path\": \"/\", \"sameSite\": null, \"secure\": false, \"session\": false, \"storeId\": null, \"value\": \"AVos6YxIkQ4EMdbXR\" }, { \"domain\": \"myaccount.google.com\", \"expirationDate\": 1714443906.536068, \"hostOnly\": true, \"httpOnly\": true, \"name\": \"OSID\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"Uwisa3Bl2ljgieXaUDGAaJ3AYfcQhYEYpkcgMSFR_N7NJIzjSu5KpFAYk5anrCBoUq6W8w.\" }, { \"domain\": \"myaccount.google.com\", \"expirationDate\": 1682670250, \"hostOnly\": true, \"httpOnly\": false, \"name\": \"OTZ\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"6962904_28_28__28_\" }, { \"domain\": \".google.com\", \"expirationDate\": 1694850083.212024, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"SEARCH_SAMESITE\", \"path\": \"/\", \"sameSite\": \"strict\", \"secure\": false, \"session\": false, \"storeId\": null, \"value\": \"CgQI7JcB\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.22082, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"SID\", \"path\": \"/\", \"sameSite\": null, \"secure\": false, \"session\": false, \"storeId\": null, \"value\": \"Uwisa5GA6JaTg7FWi_3ojC3Oz1WWwMwCVurw5V1egQVwArhNNcvHOgNiSS8iVbcU5V0eCg.\" }, { \"domain\": \".google.com\", \"expirationDate\": 1711615240.474862, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"SIDCC\", \"path\": \"/\", \"sameSite\": null, \"secure\": false, \"session\": false, \"storeId\": null, \"value\": \"AFvIBn9KqACr9zdaGrDDHyb8OxQS3BUSGC5FjedtT9RBKbSlSXIbQdvLRVBEZ7_qHV_XSx-bTYw\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.220976, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"SSID\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"AhBGLMUUzYTEdqFKn\" } ]",
+        "comment": "",
+        "dislike": false,
+        "like": false,
+        "likeAfter": [0, 0],
+        "watchTime": [0, 0],
+        "dislikeAfter": [0, 0],
+        "commentAfter": [0, 0]
+      }
+    },
+    "index": 0,
+    "totalWorked": 1,
+    "current_time": 0,
+    "start_time": 1680161315396,
+    "loaded": false,
+    "bandwith": 0,
+    "failed": false,
+    "finished": false,
+    "stopped": false,
+    "proxy_used": true,
+    "debug": [],
+    "errors": []
+  },
+  "options": {
+    "close_server_on_finish": true,
+    "server_port": 6553,
+    "headless": false,
+    "no_visuals": false,
+    "browserPath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "concurrency": 1,
+    "concurrencyInterval": 5,
+    "proxyTimeout": 30,
+    "disable_proxy_tests": true,
+    "proxy_tested_headless": true,
+    "proxies": [],
+    "videos": [
+      {
+        "keyword": "THẮNG x CINEBAR COCKTAIL & WINE",
+        "id": "Ue30D4oavs8",
+        "guest_views": 100,
+        "is_live": false,
+        "watchTime": [92, 100],
+        "style": ["search", "direct"],
+        "accounts": [
+          {
+            "email": "houvklmn@gmail.com",
+            "password": "Test7ZmcFm6fJCFOG",
+            "cookies": "[ { \"domain\": \".google.com\", \"expirationDate\": 1714443906.221004, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"SAPISID\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"1IfOupl1cIZFTHFx/AkyaM5ocWO8omZ63a\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.221046, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"__Secure-3PAPISID\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"1IfOupl1cIZFTHFx/AkyaM5ocWO8omZ63a\" }, { \"domain\": \".google.com\", \"expirationDate\": 1694850082.660398, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"AEC\", \"path\": \"/\", \"sameSite\": \"lax\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"AUEFqZfdy2Rn--2-QRjFyeVNTsv5ZOC2uRje_exj3-0kkl4MKhFVpu2qVHU\" }, { \"domain\": \".google.com\", \"expirationDate\": 1695889104.450466, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"NID\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"511=KfWivHCoqoRN7mCQxoR4LKW2cA5yYIn8HW4mQNQPxnsL8DKUQFxBiFbXOmt53ryhOOCoaAhSmjke3zzoeR2tuFcIbHqEckW8hU_B9J_RC2IRM22EL94ZBVW9quJ89NekmMG8bE0zZyWHGXPZLsYvbxx_8AzZ0RZceY70bRWzGgWEU_ROGdTKHspLdr9eXFaY2zKLf2jjHpZp-C92V3slXRZ5SF5QUIYQhA3tIldvxZHm0e6rIw\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.22099, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"APISID\", \"path\": \"/\", \"sameSite\": null, \"secure\": false, \"session\": false, \"storeId\": null, \"value\": \"mFHS5VeZspfThKqi/A7rU43bTlcwDKT7R6\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.221033, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"__Secure-1PAPISID\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"1IfOupl1cIZFTHFx/AkyaM5ocWO8omZ63a\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.220885, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"__Secure-3PSID\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"Uwisa5GA6JaTg7FWi_3ojC3Oz1WWwMwCVurw5V1egQVwArhNvmz8CO9j4rN37gK9fNYaHQ.\" }, { \"domain\": \".google.com\", \"expirationDate\": 1682669904.826549, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"1P_JAR\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"2023-03-29-08\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.220865, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"__Secure-1PSID\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"Uwisa5GA6JaTg7FWi_3ojC3Oz1WWwMwCVurw5V1egQVwArhNIRh7u61aLVHtFYWvOT-lpQ.\" }, { \"domain\": \".google.com\", \"expirationDate\": 1711615240.47493, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"__Secure-1PSIDCC\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"AFvIBn_uJcEzRw45fjqw0-CxgYXSdN00HQsJTvH5o2vGxyMmSUZaEDIVShb-5DL2tMaSzQS3bg\" }, { \"domain\": \".google.com\", \"expirationDate\": 1711615240.47498, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"__Secure-3PSIDCC\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"AFvIBn8zVxQLPbIuNrBI0OPKYs3eL8hbD6dGbQDGmO1uERSsiRW_kL1h-zQ2cGoUn7Quh1g15JI\" }, { \"domain\": \"myaccount.google.com\", \"expirationDate\": 1714443906.536125, \"hostOnly\": true, \"httpOnly\": true, \"name\": \"__Secure-OSID\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"Uwisa3Bl2ljgieXaUDGAaJ3AYfcQhYEYpkcgMSFR_N7NJIzj8EEW-tViGdnNfiRpjS0Ewg.\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.220958, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"HSID\", \"path\": \"/\", \"sameSite\": null, \"secure\": false, \"session\": false, \"storeId\": null, \"value\": \"AVos6YxIkQ4EMdbXR\" }, { \"domain\": \"myaccount.google.com\", \"expirationDate\": 1714443906.536068, \"hostOnly\": true, \"httpOnly\": true, \"name\": \"OSID\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"Uwisa3Bl2ljgieXaUDGAaJ3AYfcQhYEYpkcgMSFR_N7NJIzjSu5KpFAYk5anrCBoUq6W8w.\" }, { \"domain\": \"myaccount.google.com\", \"expirationDate\": 1682670250, \"hostOnly\": true, \"httpOnly\": false, \"name\": \"OTZ\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"6962904_28_28__28_\" }, { \"domain\": \".google.com\", \"expirationDate\": 1694850083.212024, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"SEARCH_SAMESITE\", \"path\": \"/\", \"sameSite\": \"strict\", \"secure\": false, \"session\": false, \"storeId\": null, \"value\": \"CgQI7JcB\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.22082, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"SID\", \"path\": \"/\", \"sameSite\": null, \"secure\": false, \"session\": false, \"storeId\": null, \"value\": \"Uwisa5GA6JaTg7FWi_3ojC3Oz1WWwMwCVurw5V1egQVwArhNNcvHOgNiSS8iVbcU5V0eCg.\" }, { \"domain\": \".google.com\", \"expirationDate\": 1711615240.474862, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"SIDCC\", \"path\": \"/\", \"sameSite\": null, \"secure\": false, \"session\": false, \"storeId\": null, \"value\": \"AFvIBn9KqACr9zdaGrDDHyb8OxQS3BUSGC5FjedtT9RBKbSlSXIbQdvLRVBEZ7_qHV_XSx-bTYw\" }, { \"domain\": \".google.com\", \"expirationDate\": 1714443906.220976, \"hostOnly\": false, \"httpOnly\": true, \"name\": \"SSID\", \"path\": \"/\", \"sameSite\": null, \"secure\": true, \"session\": false, \"storeId\": null, \"value\": \"AhBGLMUUzYTEdqFKn\" } ]",
+            "comment": "",
+            "dislike": false,
+            "like": false,
+            "likeAfter": [0, 0],
+            "watchTime": [0, 0],
+            "dislikeAfter": [0, 0],
+            "commentAfter": [0, 0]
+          }
+        ]
+      }
+    ],
+    "skip_ads": true
+  }
+}

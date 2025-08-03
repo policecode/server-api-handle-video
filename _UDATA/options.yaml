@@ -1,0 +1,15 @@
+close_server_on_finish: true
+server_port: 8080
+headless: false
+no_visuals: false
+browserPath: C:\Program Files\Google\Chrome\Application\chrome.exe
+cachePath: C:\ProgramData\privateClientBot
+concurrency: 4
+concurrencyInterval: 5
+proxyTimeout: 30
+disable_proxy_tests: true
+proxy_tested_headless: false
+proxies: []
+skip_ads: true
+main_driver: gpm_login
+max_profile_driver: 1000

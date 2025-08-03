@@ -1,0 +1,16 @@
+{
+	"cat_version":1,
+	"list_version":40,
+	"list_count":5,
+	"list_added":1,
+	"list_type":"Built in",
+	"data":{
+		"domain":[],
+		"host":[],
+		"url":[],
+		"tld":[],
+		"file":[
+		]
+	},
+	"list_records":1
+}
