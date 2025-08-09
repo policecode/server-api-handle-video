@@ -3,7 +3,7 @@ const ToolVideoController = require('../src/controllers/ToolVideoController');
 
 // ===========================================================
 webApp.get('/api/tool-video', async (req, res) => {
-  return res.json('API này có hoạt động haiz')
+  return res.json('API này có hoạt động haiz ok men')
 });
 
 webApp.post('/api/tool-video/crawl-download-youtube', async (req, res) => {
