@@ -339,7 +339,7 @@ class ToolVideoController extends Controller {
         ],
       ]);
 
-      const info = await ytdl.getBasicInfo(linkyoutube, agent);
+      const info = await ytdl.getBasicInfo(linkyoutube, {agent});
       // const video = await ytdl.getInfo(linkyoutube )
       // const listVideo = {};
       // const listAudio = {};
