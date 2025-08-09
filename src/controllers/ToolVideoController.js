@@ -101,7 +101,7 @@ class ToolVideoController extends Controller {
     const { linkyoutube } = req.body;
 
     try {
-      const agent = ytdl.createAgent([
+      const cookies  = ([
         [
           {
             domain: '.youtube.com',
@@ -338,7 +338,10 @@ class ToolVideoController extends Controller {
           },
         ],
       ]);
-
+      const agentOptions = {
+ 
+      };
+      const agent = ytdl.createAgent(cookies, agentOptions);
       const info = await ytdl.getBasicInfo(linkyoutube, {agent});
       // const video = await ytdl.getInfo(linkyoutube )
       // const listVideo = {};
