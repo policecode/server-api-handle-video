@@ -102,10 +102,8 @@ class ToolVideoController extends Controller {
 
     try {
       const myCookie  = "LOGIN_INFO=AFmmF2swRQIhAJuSZp1z9AGkyx7qI_jcQvlsVe9a2ZVpn6sNLlOOMVkxAiAoik6nKL9iSoXU4O9DGFQDH6Xu8hYyVRnLpnrOjJQvUQ:QUQ3MjNmenZfR1dyRnB2WlpmTlg0VlFpbjE2ZWMxV1FOZGRnRjZFc2lWQ2pSd01VZUszSHItaGx4QlF6RTVkYVkzb3hrcEwyNG83bWdENTJGUlJueW9tZkJDcEpfVnBoeWJtUGRodDlYYWtuNFRxbEdjUERyUVM2cmN6RGxBdnh2NjZPV3FkeVYzNG1tQnRhZko1SFdUWXAzV3M0aWk5SVV3; HSID=Anpr7bETtVYnnCKO7; SSID=A1hzMz4wrhXnOCkYY; APISID=gulaWar28pwySVQl/AEvTjQvwdPrmoazjn; SAPISID=E8wcaMq7-2kqMNjF/A2w3KS0Qg26uUpzU-; __Secure-1PAPISID=E8wcaMq7-2kqMNjF/A2w3KS0Qg26uUpzU-; __Secure-3PAPISID=E8wcaMq7-2kqMNjF/A2w3KS0Qg26uUpzU-; VISITOR_INFO1_LIVE=2DNf5jVOpmo; VISITOR_PRIVACY_METADATA=CgJWThIEGgAgNg%3D%3D; YSC=iJh_8lVbtTM; PREF=tz=Asia.Saigon&f7=100; SID=g.a0000Aj_YcJMQnjLTwsJLmYDlJ9jGcC374X6yIopszrLFNG-zMCBu8p_UaUjR9piyPQx6yk6xgACgYKAUUSARMSFQHGX2Mig5ZMnU1a9JhuZogZAUtMdRoVAUF8yKouiSgF5YWrMfNsK7ahQ9il0076; __Secure-1PSID=g.a0000Aj_YcJMQnjLTwsJLmYDlJ9jGcC374X6yIopszrLFNG-zMCBjY49mUo0LjiBH-iXCHX6fAACgYKAakSARMSFQHGX2MiBinaBIEX3FVnMQiVvwFDJRoVAUF8yKqgIMq9rqVd1q8rmqpAXMcz0076; __Secure-3PSID=g.a0000Aj_YcJMQnjLTwsJLmYDlJ9jGcC374X6yIopszrLFNG-zMCBy818vO_ZmErouQhTDZAM5wACgYKAYUSARMSFQHGX2MiEV3b7_7KY5GMmFOaKuXvuBoVAUF8yKrNsOvtoP6TDH8ps39WlXkO0076; __Secure-ROLLOUT_TOKEN=COz5pKC-gPOXUBCq9uOR4v2NAxjjg6Govf-OAw%3D%3D; __Secure-1PSIDTS=sidts-CjEB5H03P_TBvScTWxAUHUlCz8-azyPM7inF7CqD9FTYUZ-Iz44s_kkt3ShA6GYjp1yoEAA; __Secure-3PSIDTS=sidts-CjEB5H03P_TBvScTWxAUHUlCz8-azyPM7inF7CqD9FTYUZ-Iz44s_kkt3ShA6GYjp1yoEAA; SIDCC=AKEyXzV6rwxCNja-At8Q9BZGE2O3KY5JYSS6KdXdqLRb-G_DpIQlZqgJn0PmA95XBr0sTUBB_A; __Secure-1PSIDCC=AKEyXzUZ_5ahRRktxUxzJcmt16O89n_VpigRnh6DllopdeishVbR2VgJxgfaJDB73nE1Qrg4CA; __Secure-3PSIDCC=AKEyXzXkZnHGnC8NUeNRWtZpNL1CkWKbUOfuAOB7TmB81ifkeBVhmOIBMmoVkaXRZ7CCW1_eXA";
-      // const proxyUri = "http://euwjauzq:6ubyvn1o2nfs@23.95.150.145:6114";
-      const agent = ytdl.createAgent([
-        { name: "cookie", value: myCookie }
-      ])
+      const proxyUri = "http://euwjauzq:6ubyvn1o2nfs@45.38.107.97:6014";
+      const agent = ytdl.createProxyAgent({ uri: proxyUri })
       const info = await ytdl.getBasicInfo(linkyoutube, {agent});
       // const video = await ytdl.getInfo(linkyoutube )
       // const listVideo = {};
