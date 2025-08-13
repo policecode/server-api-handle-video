@@ -2,7 +2,7 @@ const Sequelize = require("sequelize");
 const sequelize = new Sequelize('database', 'user','password', {
   host: 'localhost',
   dialect: 'sqlite',
-  operatorsAliases: 0,
+  operatorsAliases: 1,
 
   pool: {
     max: 5,
@@ -23,5 +23,6 @@ db.sequelize = sequelize;
 // db.UbndhoankiemModel = require("./sequelize/ubndhoankiem.model copy.js")(sequelize, Sequelize);
 // db.MangaModel = require("./sequelize/manga.model.js")(sequelize, Sequelize);
 // db.MangaCrawlModel = require("./sequelize/manga_crawl.model.js")(sequelize, Sequelize);
+db.ProxyModel = require("./sequelize/proxy.model.js")(sequelize, Sequelize);
 
 module.exports = db;

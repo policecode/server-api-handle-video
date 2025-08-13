@@ -5,6 +5,7 @@ const http = require('http');
 const https = require('https');
 // const FormData = require('form-data');
 const Controller = require('./Controller');
+const ProxyController = require('./ProxyController');
 // const BrowserDriver = require('../drivers/BrowserDriver');
 // const RandomHelper = require('../helpers/random.helper');
 const FileHelper = require('../helpers/file.helper');
@@ -99,32 +100,33 @@ class ToolVideoController extends Controller {
 
   async crawlYoutube(req, res) {
     const { linkyoutube } = req.body;
-
+    const proxyController = new ProxyController();
     try {
-     
-      const listProxy = ["http://euwjauzq:6ubyvn1o2nfs@45.38.107.97:6014", "http://euwjauzq:6ubyvn1o2nfs@104.222.161.211:6343"];
-      const proxyUri = listProxy[0];
+     const checkProxy = await proxyController.showDetailProxy({status: 1}, [['count', 'DESC']]);
+      let proxy = checkProxy.data;
+      // const listProxy = ["http://euwjauzq:6ubyvn1o2nfs@45.38.107.97:6014", "http://euwjauzq:6ubyvn1o2nfs@104.222.161.211:6343"];
+      const proxyUri = `${proxy.protocol}://${proxy.user}:${proxy.pass}@${proxy.host}`;
       const agent = ytdl.createProxyAgent({ uri: proxyUri })
       const info = await ytdl.getBasicInfo(linkyoutube, {agent});
-      // const video = await ytdl.getInfo(linkyoutube )
-      // const listVideo = {};
-      // const listAudio = {};
+      const video = await ytdl.getInfo(linkyoutube )
+      const listVideo = {};
+      const listAudio = {};
 
-      // video.formats.forEach((el, index) => {
-      //   if (el.container == 'mp4' && el.qualityLabel) {
-      //   // el.hasVideo && el.hasAudio &&
-      //     if (!listVideo[el.qualityLabel]) {
-      //       listVideo[el.qualityLabel] = el
-      //     } else if(el.hasVideo && el.hasAudio) {
-      //       if (!(listVideo[el.qualityLabel].hasVideo && listVideo[el.qualityLabel].hasAudio)) {
-      //         listVideo[el.qualityLabel] = el
-      //       }
-      //     }
-      //   }
-      //   if (!el.hasVideo) {
-      //     listAudio[el.quality] = el
-      //   }
-      // });
+      video.formats.forEach((el, index) => {
+        if (el.container == 'mp4' && el.qualityLabel) {
+        // el.hasVideo && el.hasAudio &&
+          if (!listVideo[el.qualityLabel]) {
+            listVideo[el.qualityLabel] = el
+          } else if(el.hasVideo && el.hasAudio) {
+            if (!(listVideo[el.qualityLabel].hasVideo && listVideo[el.qualityLabel].hasAudio)) {
+              listVideo[el.qualityLabel] = el
+            }
+          }
+        }
+        if (!el.hasVideo) {
+          listAudio[el.quality] = el
+        }
+      });
 
       let information = {
         title: info.videoDetails.title,
@@ -145,14 +147,17 @@ class ToolVideoController extends Controller {
         likeCount: info.videoDetails.likeCount,
       };
 
+      await proxyController.updateDBProxy(proxy.id, {count: Number(proxy.count) + 1});
+
       return res.status(200).send({
         result: 1,
         type: 'Success',
         information: information,
-        // audio: listAudio,
-        // video: listVideo
+        audio: listAudio,
+        video: listVideo
       });
     } catch (e) {
+      await proxyController.updateDBProxy(proxy.id, {status: 2});
       return res.status(200).send({
         result: 0,
         type: 'Error',

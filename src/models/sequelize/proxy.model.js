@@ -13,10 +13,30 @@ module.exports = (sequelize, Sequelize) => {
 			defaultValue: '',
 			type: DataTypes.STRING,
 		},
-		provider: {
+		protocol: {
+			allowNull: false,
+			defaultValue: 'http',
+			type: DataTypes.STRING
+		},
+		user: {
 			allowNull: false,
 			defaultValue: '',
 			type: DataTypes.STRING
+		},
+		pass: {
+			allowNull: false,
+			defaultValue: '',
+			type: DataTypes.STRING
+		},
+		status: {
+			allowNull: false,
+			defaultValue: 1,
+			type: DataTypes.TINYINT
+		},
+		count: {
+			allowNull: false,
+			defaultValue: 0,
+			type: DataTypes.INTEGER
 		},
 	});
   

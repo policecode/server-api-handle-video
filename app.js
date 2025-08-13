@@ -113,6 +113,7 @@ require('./routes/toolvideo.js');
 // require('./routes/xuatnhapcanh.js');
 // require('./routes/ubndhoankiem.js');
 // require('./routes/crawlManga.js');
+require('./routes/proxy.js');
 
 const PORT = process.env.PORT || 8080;
 webApp.listen(PORT, () => console.log(`Serve running on port ${PORT}`));
