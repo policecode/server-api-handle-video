@@ -101,17 +101,20 @@ class ToolVideoController extends Controller {
   async crawlYoutube(req, res) {
     const { linkyoutube } = req.body;
     const proxyController = new ProxyController();
+    let proxy = {};
     try {
-     const checkProxy = await proxyController.showDetailProxy({status: 1}, [['count', 'DESC']]);
-      let proxy = checkProxy.data;
+      const checkProxy = await proxyController.showDetailProxy({status: 1}, [['count', 'DESC']]);
+      proxy = checkProxy.data;
       // const listProxy = ["http://euwjauzq:6ubyvn1o2nfs@45.38.107.97:6014", "http://euwjauzq:6ubyvn1o2nfs@104.222.161.211:6343"];
+
       const proxyUri = `${proxy.protocol}://${proxy.user}:${proxy.pass}@${proxy.host}`;
       const agent = ytdl.createProxyAgent({ uri: proxyUri })
       const info = await ytdl.getBasicInfo(linkyoutube, {agent});
       const video = await ytdl.getInfo(linkyoutube )
       const listVideo = {};
       const listAudio = {};
-
+      const audio = {};
+      const videos = [];
       video.formats.forEach((el, index) => {
         if (el.container == 'mp4' && el.qualityLabel) {
         // el.hasVideo && el.hasAudio &&
@@ -123,10 +126,17 @@ class ToolVideoController extends Controller {
             }
           }
         }
-        if (!el.hasVideo) {
-          listAudio[el.quality] = el
+        if (!el.hasVideo && el.hasAudio) {
+          if (!listAudio[el.quality]) {
+            listAudio[el.quality] = 1
+            audio = el;
+          }
         }
       });
+
+      for (const key in listVideo) {
+          videos.push(listVideo[key]);
+      }
 
       let information = {
         title: info.videoDetails.title,
@@ -153,8 +163,8 @@ class ToolVideoController extends Controller {
         result: 1,
         type: 'Success',
         information: information,
-        audio: listAudio,
-        video: listVideo
+        audio: audio,
+        videos: videos 
       });
     } catch (e) {
       await proxyController.updateDBProxy(proxy.id, {status: 2});
